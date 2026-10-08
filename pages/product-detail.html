@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Gold Ring | Aura Premium Jewellery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#F7F3EC',
+                        charcoal: '#25221F',
+                        gold: '#B99A62',
+                        taupe: '#C8BBA7',
+                        espresso: '#211C18'
+                    },
+                    fontFamily: {
+                        royal: ['"Cinzel Decorative"', '"Cinzel"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-ivory text-charcoal antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 z-50 bg-ivory/95 backdrop-blur-md shadow-sm transition-all duration-500 py-4 md:py-5 text-charcoal">
+        <div class="container mx-auto px-4 md:px-10 flex items-center justify-between">
+            
+            <!-- Left: Logo & Brand Emblem -->
+            <a href="../index.html" class="flex items-center space-x-3 group shrink-0">
+                <div class="w-9 h-9 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold/25 shadow-sm">
+                    <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 19 9 12 22 5 9 12 2"></polygon>
+                        <line x1="5" y1="9" x2="19" y2="9"></line>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                        <line x1="9.5" y1="5.5" x2="14.5" y2="5.5"></line>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="logo-text text-xl md:text-2xl font-serif tracking-[0.25em] text-charcoal uppercase font-medium leading-tight transition-colors">AURA</span>
+                    <span class="logo-subtext text-[8px] md:text-[9px] tracking-[0.3em] text-gold uppercase font-sans font-light">FINE JEWELLERY</span>
+                </div>
+            </a>
+
+            <!-- Middle: Search Option -->
+            <div class="flex-1 max-w-xs md:max-w-md mx-3 md:mx-8">
+                <form action="products.html" method="GET" class="header-search-form relative w-full flex items-center">
+                    <input type="text" name="search" placeholder="Search gold, diamonds, collections..." 
+                           class="search-input w-full bg-charcoal/5 border-charcoal/20 text-charcoal placeholder-charcoal/50 text-xs tracking-wide py-2 md:py-2.5 pl-9 pr-4 rounded-full border focus:outline-none focus:border-gold focus:bg-white transition-all shadow-inner">
+                    <i data-lucide="search" class="search-icon w-4 h-4 text-charcoal/60 absolute left-3 pointer-events-none transition-colors"></i>
+                    <button type="submit" class="sr-only">Search</button>
+                </form>
+            </div>
+
+            <!-- Right: Navigation Links & Actions -->
+            <div class="flex items-center space-x-6 md:space-x-8 shrink-0">
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex space-x-6 xl:space-x-8 text-xs xl:text-sm font-medium tracking-wider uppercase">
+
+                    <a href="products.html" class="nav-link text-charcoal hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Collections</a>
+                    <a href="about.html" class="nav-link text-charcoal hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">About Us</a>
+                    <a href="certificates.html" class="nav-link text-charcoal hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Certificates</a>
+                    <a href="contact.html" class="nav-link text-charcoal hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Contact</a>
+                </nav>
+
+                <!-- Action Items -->
+                <div class="flex items-center space-x-4 md:space-x-5">
+                    <a href="#" class="nav-link text-charcoal hover:text-gold transition-colors relative p-1" title="Wishlist">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                        <span class="absolute -top-1 -right-1.5 bg-gold text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                    </a>
+                    <a href="contact.html" class="hidden md:inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-gold text-gold hover:bg-gold hover:text-white transition-all duration-300 text-xs tracking-widest uppercase font-medium shadow-sm hover:shadow">Enquire</a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden nav-link text-charcoal hover:text-gold transition-colors p-1" aria-label="Toggle Menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-full max-w-sm bg-ivory z-[60] transform -translate-x-full transition-transform duration-500 flex flex-col">
+        <div class="p-6 flex justify-between items-center border-b border-taupe/20">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-7 h-7 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 19 9 12 22 5 9 12 2"></polygon>
+                        <line x1="5" y1="9" x2="19" y2="9"></line>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif tracking-[0.25em] text-charcoal uppercase font-medium leading-none">AURA</span>
+                    <span class="text-[7px] tracking-[0.3em] text-gold uppercase font-sans font-light">FINE JEWELLERY</span>
+                </div>
+            </div>
+            <button id="close-menu-btn" class="hover:text-gold transition-colors"><i data-lucide="x" class="w-6 h-6"></i></button>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-8 px-6 space-y-6">
+            <a href="../index.html" class="block text-xl font-serif hover:text-gold">Home</a>
+
+            <a href="about.html" class="block text-xl font-serif hover:text-gold">About Us</a>
+            <a href="certificates.html" class="block text-xl font-serif hover:text-gold">Certificates</a>
+            <a href="contact.html" class="block text-xl font-serif hover:text-gold">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Top Bar: HUID + SKU -->
+    <div class="bg-ivory border-b border-taupe/20 pt-24 pb-0">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12 flex items-center justify-between py-3 text-xs text-charcoal/60 font-sans">
+            <a href="products.html" class="flex items-center gap-1.5 hover:text-gold transition-colors font-medium tracking-wide">
+                <i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> BACK TO PRODUCTS PAGE
+            </a>
+            <div class="flex items-center gap-5">
+                <span class="flex items-center gap-1.5"><i data-lucide="star" class="w-3 h-3 text-gold fill-gold"></i> HUID: <strong class="text-charcoal">RJ382910</strong></span>
+                <span class="text-taupe">|</span>
+                <span>SKU: <strong class="text-charcoal">RJW-BG-002</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section -->
+    <section class="py-10 px-6 md:px-12 max-w-[1400px] mx-auto">
+        <div class="flex flex-col lg:flex-row gap-12 lg:gap-16">
+
+            <!-- Left: Image Gallery -->
+            <div class="w-full lg:w-1/2 fade-up">
+                <!-- Main Image -->
+                <div class="relative bg-[#fdf8f3] rounded-sm overflow-hidden aspect-square mb-3 border border-taupe/20 shadow-sm">
+                    <img id="main-product-img" src="../assets/imperial-diamond-bracelet.jpg" alt="Heritage Gold Bangles Set" class="w-full h-full object-cover">
+                </div>
+                <!-- Thumbnails -->
+                <div class="flex gap-3">
+                    <button onclick="document.getElementById('main-product-img').src='../assets/imperial-diamond-bracelet.jpg'"
+                        class="w-20 h-20 border-2 border-gold overflow-hidden rounded-sm flex-shrink-0">
+                        <img src="../assets/imperial-diamond-bracelet.jpg" class="w-full h-full object-cover">
+                    </button>
+                    <button onclick="document.getElementById('main-product-img').src='../assets/temple-jewellery.jpg'"
+                        class="w-20 h-20 border border-taupe/40 hover:border-gold overflow-hidden rounded-sm flex-shrink-0 transition-colors">
+                        <img src="../assets/temple-jewellery.jpg" class="w-full h-full object-cover">
+                    </button>
+                </div>
+                <!-- BIS Verification Badge -->
+                <div class="mt-5 flex items-start gap-4 bg-[#FFF9EE] border border-gold/30 rounded-sm p-4 shadow-sm">
+                    <div class="w-10 h-10 rounded-full bg-charcoal flex items-center justify-center flex-shrink-0">
+                        <i data-lucide="shield-check" class="w-5 h-5 text-gold"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-2 mb-1">
+                            <span class="font-sans font-bold text-charcoal text-sm">Yes (BIS 916)</span>
+                            <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Verified</span>
+                        </div>
+                        <p class="text-xs text-charcoal/60 font-sans">HUID Code: <strong class="text-charcoal">HUID-RJ382910</strong> &nbsp;•&nbsp; Authority: Bureau of Indian Standards (BIS)</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Product Info -->
+            <div class="w-full lg:w-1/2 fade-up delay-100">
+
+                <!-- Badges -->
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-gold text-white text-[10px] font-bold px-3 py-1 tracking-widest uppercase font-sans">Bestseller</span>
+                    <span class="bg-charcoal text-white text-[10px] font-bold px-3 py-1 tracking-widest uppercase font-sans">Heritage Gold Collection</span>
+                    <span class="border border-gold/60 text-gold text-[10px] font-semibold px-3 py-1 tracking-widest uppercase font-sans">Women</span>
+                    <span class="border border-taupe/40 text-charcoal/70 text-[10px] px-3 py-1 tracking-widest uppercase font-sans">Wedding / Traditional Festive</span>
+                </div>
+
+                <!-- Breadcrumb -->
+                <p class="text-[11px] tracking-[0.25em] uppercase text-gold font-cinzel mb-2">Bracelets &nbsp;•&nbsp; Kada / Bangles Set</p>
+
+                <!-- Title -->
+                <h1 class="font-serif text-3xl md:text-4xl text-charcoal mb-3 leading-snug">Heritage Gold Bangles Set</h1>
+
+                <!-- Rating -->
+                <div class="flex items-center gap-2 mb-5">
+                    <div class="flex text-gold text-base">★★★★<span class="opacity-50">★</span></div>
+                    <span class="text-xs text-charcoal/50 font-sans">(28 Authentic Reviews)</span>
+                </div>
+
+                <!-- Price -->
+                <div class="bg-white border border-taupe/20 rounded-sm px-5 py-4 mb-3 shadow-sm">
+                    <div class="flex items-baseline gap-3 mb-1">
+                        <span class="text-3xl font-bold text-charcoal font-serif">₹85,500</span>
+                        <span class="text-base text-charcoal/40 line-through font-sans">₹95,000</span>
+                        <span class="bg-red-100 text-red-600 text-xs font-bold px-2 py-0.5 rounded font-sans">10% OFF</span>
+                    </div>
+                    <p class="text-xs text-charcoal/50 font-sans">Inclusive of 3% GST (₹2,500) &nbsp;•&nbsp;
+                        <a href="#pricing-tab" class="text-gold underline hover:text-charcoal transition-colors">View Transparent Price Breakdown</a>
+                    </p>
+                </div>
+
+                <!-- Stock -->
+                <div class="flex items-center gap-2 mb-5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-500 inline-block"></span>
+                    <span class="text-sm text-green-600 font-semibold font-sans">In Stock <span class="text-charcoal/50 font-normal">(8 available)</span></span>
+                </div>
+
+                <!-- Description -->
+                <p class="text-charcoal/75 font-serif text-base leading-relaxed mb-6">
+                    Intricately carved 22K hallmarked gold bangles crafted by master Rajasthani artisans, celebrating age-old royal traditions with <em>filigree detailing</em>.
+                </p>
+
+                <!-- Specs Grid -->
+                <div class="grid grid-cols-2 gap-x-8 gap-y-4 border-t border-taupe/20 pt-5 mb-6">
+                    <div>
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-1">Metal &amp; Purity</p>
+                        <p class="text-sm font-semibold text-charcoal font-sans">22K (916 BIS Hallmarked) Yellow Gold</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-1">Gross Weight</p>
+                        <p class="text-sm font-semibold text-charcoal font-sans">36.00 gms</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-1">Net Metal Weight</p>
+                        <p class="text-sm font-semibold text-charcoal font-sans">36.00 gms</p>
+                    </div>
+                    <div>
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-1">Certification</p>
+                        <p class="text-sm font-semibold text-gold font-sans">BIS Hallmarked</p>
+                    </div>
+                </div>
+
+                <!-- Quantity -->
+                <div class="flex items-center gap-6 mb-7">
+                    <span class="text-xs uppercase tracking-widest text-charcoal/50 font-sans font-semibold">Quantity:</span>
+                    <div class="flex items-center border border-taupe/40 rounded-sm overflow-hidden">
+                        <button onclick="var q=document.getElementById('qty'); q.value=Math.max(1,+q.value-1)"
+                            class="w-9 h-9 flex items-center justify-center text-charcoal hover:bg-gold hover:text-white transition-colors text-lg font-light border-r border-taupe/40">−</button>
+                        <input id="qty" type="number" value="1" min="1" max="8"
+                            class="w-12 h-9 text-center text-sm font-semibold bg-white outline-none text-charcoal">
+                        <button onclick="var q=document.getElementById('qty'); q.value=Math.min(8,+q.value+1)"
+                            class="w-9 h-9 flex items-center justify-center text-charcoal hover:bg-gold hover:text-white transition-colors text-lg font-light border-l border-taupe/40">+</button>
+                    </div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex gap-3 mb-7">
+                    <button onclick="alert('Added to bag!')"
+                        class="flex-1 bg-charcoal text-white py-4 text-xs tracking-[0.2em] uppercase font-cinzel font-semibold hover:bg-gold transition-colors duration-400 flex items-center justify-center gap-2 shadow-lg">
+                        <i data-lucide="shopping-bag" class="w-4 h-4"></i> Add to Bag
+                    </button>
+                    <button class="px-5 py-4 border border-taupe/50 text-charcoal/70 hover:border-gold hover:text-gold transition-colors flex items-center gap-1.5 text-xs tracking-widest uppercase font-sans">
+                        <i data-lucide="heart" class="w-4 h-4"></i> Wishlist
+                    </button>
+                </div>
+
+                <!-- Trust Badges -->
+                <div class="grid grid-cols-4 gap-2 border-t border-taupe/20 pt-5">
+                    <div class="flex flex-col items-center text-center gap-1.5">
+                        <div class="w-8 h-8 text-blue-500"><i data-lucide="shield" class="w-full h-full"></i></div>
+                        <span class="text-[10px] text-charcoal/60 font-sans leading-tight">100% Certified</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center gap-1.5">
+                        <div class="w-8 h-8 text-gold"><i data-lucide="award" class="w-full h-full"></i></div>
+                        <span class="text-[10px] text-charcoal/60 font-sans leading-tight">BIS Hallmarked</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center gap-1.5">
+                        <div class="w-8 h-8 text-green-500"><i data-lucide="package" class="w-full h-full"></i></div>
+                        <span class="text-[10px] text-charcoal/60 font-sans leading-tight">Insured Shipping</span>
+                    </div>
+                    <div class="flex flex-col items-center text-center gap-1.5">
+                        <div class="w-8 h-8 text-purple-500"><i data-lucide="refresh-cw" class="w-full h-full"></i></div>
+                        <span class="text-[10px] text-charcoal/60 font-sans leading-tight">Lifetime Exchange</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Detail Tabs -->
+    <section class="border-t border-taupe/20 bg-white" id="pricing-tab">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+
+            <!-- Tab Buttons -->
+            <div class="flex overflow-x-auto border-b border-taupe/20 gap-0">
+                <button onclick="showTab('tab-pricing', this)"
+                    class="tab-btn active-tab px-6 py-4 text-xs font-bold tracking-widest uppercase font-cinzel text-gold border-b-2 border-gold whitespace-nowrap">
+                    1. Transparent Pricing
+                </button>
+                <button onclick="showTab('tab-metal', this)"
+                    class="tab-btn px-6 py-4 text-xs font-semibold tracking-widest uppercase font-cinzel text-charcoal/50 hover:text-charcoal border-b-2 border-transparent whitespace-nowrap transition-colors">
+                    2. Metal &amp; Gold Details
+                </button>
+                <button onclick="showTab('tab-dimensions', this)"
+                    class="tab-btn px-6 py-4 text-xs font-semibold tracking-widest uppercase font-cinzel text-charcoal/50 hover:text-charcoal border-b-2 border-transparent whitespace-nowrap transition-colors">
+                    5. Dimensions &amp; Fit
+                </button>
+                <button onclick="showTab('tab-hallmark', this)"
+                    class="tab-btn px-6 py-4 text-xs font-semibold tracking-widest uppercase font-cinzel text-charcoal/50 hover:text-charcoal border-b-2 border-transparent whitespace-nowrap transition-colors">
+                    6. Hallmark &amp; Certificate
+                </button>
+            </div>
+
+            <!-- Tab: Transparent Pricing -->
+            <div id="tab-pricing" class="tab-content py-10">
+                <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-2">Complete Transparent Pricing Breakdown</h2>
+                <p class="text-sm text-charcoal/50 font-sans mb-7">At Aura, we uphold total transparency. Every piece includes exact metal rates, making charges, gemstone costs, and statutory GST.</p>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-sm border border-taupe/20 rounded-sm overflow-hidden">
+                        <thead>
+                            <tr class="bg-[#f9f5ee] border-b border-taupe/20">
+                                <th class="text-left px-6 py-3 font-cinzel text-[11px] tracking-[0.2em] uppercase text-charcoal/60">Component</th>
+                                <th class="text-left px-6 py-3 font-cinzel text-[11px] tracking-[0.2em] uppercase text-charcoal/60">Calculation Details</th>
+                                <th class="text-right px-6 py-3 font-cinzel text-[11px] tracking-[0.2em] uppercase text-charcoal/60">Amount (₹)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-taupe/10">
+                            <tr class="hover:bg-[#fdfaf5]">
+                                <td class="px-6 py-4 font-semibold text-charcoal font-sans">Metal Value (22K 916 BIS Hallmarked)</td>
+                                <td class="px-6 py-4 text-charcoal/50 font-sans">36.00 gms Net Weight @ Live Daily Rate</td>
+                                <td class="px-6 py-4 text-right font-semibold text-charcoal font-sans">₹70,600</td>
+                            </tr>
+                            <tr class="hover:bg-[#fdfaf5]">
+                                <td class="px-6 py-4 font-semibold text-charcoal font-sans">Making Charges</td>
+                                <td class="px-6 py-4 text-charcoal/50 font-sans">Handcrafting &amp; Artisan Labour (3.5% Wastage)</td>
+                                <td class="px-6 py-4 text-right font-semibold text-charcoal font-sans">₹12,400</td>
+                            </tr>
+                            <tr class="hover:bg-[#fdfaf5]">
+                                <td class="px-6 py-4 font-semibold text-charcoal font-sans">Other Charges / Hallmarking Fee</td>
+                                <td class="px-6 py-4 text-charcoal/50 font-sans">BIS Hallmarking &amp; Insurance</td>
+                                <td class="px-6 py-4 text-right font-semibold text-charcoal font-sans">₹0</td>
+                            </tr>
+                            <tr class="hover:bg-[#fdfaf5]">
+                                <td class="px-6 py-4 font-semibold text-charcoal font-sans">GST (3% Statutory Tax)</td>
+                                <td class="px-6 py-4 text-charcoal/50 font-sans">Government Goods &amp; Services Tax</td>
+                                <td class="px-6 py-4 text-right font-semibold text-gold font-sans">₹2,500</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="bg-charcoal text-white">
+                                <td colspan="2" class="px-6 py-4 font-bold font-cinzel tracking-widest uppercase text-sm">Final Total Selling Price</td>
+                                <td class="px-6 py-4 text-right font-bold text-gold font-cinzel text-base">₹85,500</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Tab: Metal & Gold Details -->
+            <div id="tab-metal" class="tab-content hidden py-10">
+                <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-6">Metal &amp; Gold Details</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Metal Type</p>
+                        <p class="font-semibold text-charcoal font-sans">Yellow Gold</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Purity</p>
+                        <p class="font-semibold text-charcoal font-sans">22K (916 BIS Hallmarked)</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Gross Weight</p>
+                        <p class="font-semibold text-charcoal font-sans">36.00 gms</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Net Metal Weight</p>
+                        <p class="font-semibold text-charcoal font-sans">36.00 gms</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Finish</p>
+                        <p class="font-semibold text-charcoal font-sans">Antique Matte with Filigree Detailing</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Origin</p>
+                        <p class="font-semibold text-charcoal font-sans">Rajasthan, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab: Dimensions & Fit -->
+            <div id="tab-dimensions" class="tab-content hidden py-10">
+                <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-6">Dimensions &amp; Fit</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6 text-center">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Inner Diameter</p>
+                        <p class="font-bold text-2xl text-charcoal font-serif">58 mm</p>
+                        <p class="text-xs text-charcoal/50 font-sans mt-1">Standard Fit</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6 text-center">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Width</p>
+                        <p class="font-bold text-2xl text-charcoal font-serif">12 mm</p>
+                        <p class="text-xs text-charcoal/50 font-sans mt-1">Broad Style</p>
+                    </div>
+                    <div class="bg-[#fdfaf5] border border-taupe/20 p-6 text-center">
+                        <p class="text-[10px] uppercase tracking-[0.25em] text-charcoal/40 font-sans mb-2">Thickness</p>
+                        <p class="font-bold text-2xl text-charcoal font-serif">4 mm</p>
+                        <p class="text-xs text-charcoal/50 font-sans mt-1">Medium Profile</p>
+                    </div>
+                </div>
+                <p class="text-sm text-charcoal/50 font-sans mt-6 italic">* Bangles are rigid and non-adjustable. Please ensure the correct inner diameter before ordering.</p>
+            </div>
+
+            <!-- Tab: Hallmark & Certificate -->
+            <div id="tab-hallmark" class="tab-content hidden py-10">
+                <h2 class="font-serif text-2xl md:text-3xl text-charcoal mb-6">Hallmark &amp; Certificate</h2>
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1 bg-[#FFF9EE] border border-gold/30 p-8 rounded-sm">
+                        <div class="flex items-center gap-3 mb-5">
+                            <div class="w-12 h-12 rounded-full bg-charcoal flex items-center justify-center">
+                                <i data-lucide="shield-check" class="w-6 h-6 text-gold"></i>
+                            </div>
+                            <div>
+                                <p class="font-bold text-charcoal font-sans text-base">BIS 916 Hallmark</p>
+                                <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2 py-0.5 rounded-full uppercase">Verified</span>
+                            </div>
+                        </div>
+                        <div class="space-y-3 text-sm font-sans">
+                            <div class="flex justify-between border-b border-gold/15 pb-2">
+                                <span class="text-charcoal/50">HUID Code</span>
+                                <span class="font-bold text-charcoal">HUID-RJ382910</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gold/15 pb-2">
+                                <span class="text-charcoal/50">Authority</span>
+                                <span class="font-semibold text-charcoal">Bureau of Indian Standards</span>
+                            </div>
+                            <div class="flex justify-between border-b border-gold/15 pb-2">
+                                <span class="text-charcoal/50">Purity Mark</span>
+                                <span class="font-semibold text-charcoal">916 (22K)</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="text-charcoal/50">Certificate No.</span>
+                                <span class="font-semibold text-charcoal">RJW-BG-002-CERT</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 flex flex-col gap-4">
+                        <p class="text-charcoal/70 font-serif text-base leading-relaxed">Every Aura piece carries the BIS Hallmark — India's highest guarantee of gold purity. Our 22K (916) hallmark confirms that the gold content is 91.6% pure, certified by the Bureau of Indian Standards.</p>
+                        <a href="certificates.html" class="inline-flex items-center gap-2 text-xs tracking-widest uppercase font-cinzel border-b border-gold text-gold pb-1 hover:text-charcoal hover:border-charcoal transition-colors w-fit">
+                            <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Learn About Certifications
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="py-16 bg-ivory border-t border-taupe/20">
+        <div class="max-w-[1400px] mx-auto px-6 md:px-12">
+            <div class="text-center mb-10 fade-up">
+                <span class="text-gold text-xs tracking-[0.3em] font-cinzel uppercase mb-2 block">You May Also Love</span>
+                <h2 class="font-cinzel text-2xl md:text-3xl text-charcoal tracking-wide">SIMILAR CREATIONS</h2>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 fade-up delay-100">
+                <a href="product-detail.html" class="group block">
+                    <div class="relative bg-white aspect-square overflow-hidden mb-3 border border-taupe/20 group-hover:border-gold/40 transition-colors shadow-sm">
+                        <img src="../assets/temple-jewellery.jpg" alt="Royal Temple Necklace" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <p class="font-cinzel text-xs tracking-widest text-charcoal/40 uppercase mb-1">Necklaces</p>
+                    <h3 class="font-serif text-base text-charcoal mb-1 group-hover:text-gold transition-colors">Royal Temple Necklace</h3>
+                    <p class="text-sm font-semibold text-charcoal">₹1,56,500</p>
+                </a>
+                <a href="product-detail.html" class="group block">
+                    <div class="relative bg-white aspect-square overflow-hidden mb-3 border border-taupe/20 group-hover:border-gold/40 transition-colors shadow-sm">
+                        <img src="../assets/heritage-gold-ring.jpg" alt="Heritage Emerald Ring" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <p class="font-cinzel text-xs tracking-widest text-charcoal/40 uppercase mb-1">Rings</p>
+                    <h3 class="font-serif text-base text-charcoal mb-1 group-hover:text-gold transition-colors">Heritage Emerald Ring</h3>
+                    <p class="text-sm font-semibold text-charcoal">₹1,68,500</p>
+                </a>
+                <a href="product-detail.html" class="group block">
+                    <div class="relative bg-white aspect-square overflow-hidden mb-3 border border-taupe/20 group-hover:border-gold/40 transition-colors shadow-sm">
+                        <img src="../assets/signature-diamond.jpg" alt="Signature Solitaire" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <p class="font-cinzel text-xs tracking-widest text-charcoal/40 uppercase mb-1">Diamonds</p>
+                    <h3 class="font-serif text-base text-charcoal mb-1 group-hover:text-gold transition-colors">Signature Solitaire</h3>
+                    <p class="text-sm font-semibold text-charcoal">₹14,25,000</p>
+                </a>
+                <a href="product-detail.html" class="group block">
+                    <div class="relative bg-white aspect-square overflow-hidden mb-3 border border-taupe/20 group-hover:border-gold/40 transition-colors shadow-sm">
+                        <img src="../assets/about-hero.jpg" alt="Kundan Necklace Set" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    </div>
+                    <p class="font-cinzel text-xs tracking-widest text-charcoal/40 uppercase mb-1">Sets</p>
+                    <h3 class="font-serif text-base text-charcoal mb-1 group-hover:text-gold transition-colors">Kundan Necklace Set</h3>
+                    <p class="text-sm font-semibold text-charcoal">₹2,45,000</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-ivory pt-16 pb-8 border-t border-taupe/30 text-center">
+        <a href="../index.html" class="block font-serif text-2xl tracking-[0.2em] uppercase mb-4">Aura</a>
+        <p class="text-sm text-charcoal/60">&copy; 2026 Aura Jewellery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+    <script>
+        // Tab switching
+        function showTab(tabId, btn) {
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.add('hidden'));
+            document.querySelectorAll('.tab-btn').forEach(b => {
+                b.classList.remove('text-gold', 'border-gold');
+                b.classList.add('text-charcoal/50', 'border-transparent');
+            });
+            document.getElementById(tabId).classList.remove('hidden');
+            btn.classList.add('text-gold', 'border-gold');
+            btn.classList.remove('text-charcoal/50', 'border-transparent');
+        }
+    </script>
+</body>
+</html>

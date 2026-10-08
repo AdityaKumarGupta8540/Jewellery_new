@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Aura Premium Jewellery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ivory: '#F7F3EC',
+                        charcoal: '#25221F',
+                        gold: '#B99A62',
+                        taupe: '#C8BBA7',
+                        espresso: '#211C18'
+                    },
+                    fontFamily: {
+                        royal: ['"Cinzel Decorative"', '"Cinzel"', 'serif'],
+                        cinzel: ['"Cinzel"', 'serif'],
+                        serif: ['"Cormorant Garamond"', '"Playfair Display"', 'serif'],
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-ivory text-charcoal antialiased">
+
+    <!-- Header -->
+    <header id="main-header" class="fixed w-full top-0 z-50 transition-all duration-500 py-4 md:py-5" data-transparent="true">
+        <div class="container mx-auto px-4 md:px-10 flex items-center justify-between">
+            
+            <!-- Left: Logo & Brand Emblem -->
+            <a href="../index.html" class="flex items-center space-x-3 group shrink-0">
+                <div class="w-9 h-9 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center transition-all duration-300 group-hover:scale-105 group-hover:border-gold group-hover:bg-gold/25 shadow-sm">
+                    <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 19 9 12 22 5 9 12 2"></polygon>
+                        <line x1="5" y1="9" x2="19" y2="9"></line>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                        <line x1="9.5" y1="5.5" x2="14.5" y2="5.5"></line>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="logo-text text-xl md:text-2xl font-serif tracking-[0.25em] text-ivory uppercase font-medium leading-tight transition-colors">AURA</span>
+                    <span class="logo-subtext text-[8px] md:text-[9px] tracking-[0.3em] text-gold uppercase font-sans font-light">FINE JEWELLERY</span>
+                </div>
+            </a>
+
+            <!-- Middle: Search Option -->
+            <div class="flex-1 max-w-xs md:max-w-md mx-3 md:mx-8">
+                <form action="products.html" method="GET" class="header-search-form relative w-full flex items-center">
+                    <input type="text" name="search" placeholder="Search gold, diamonds, collections..." 
+                           class="search-input w-full bg-white/10 backdrop-blur-md text-ivory placeholder-ivory/60 text-xs tracking-wide py-2 md:py-2.5 pl-9 pr-4 rounded-full border border-white/20 focus:outline-none focus:border-gold focus:bg-white/20 transition-all shadow-inner">
+                    <i data-lucide="search" class="search-icon w-4 h-4 text-ivory/70 absolute left-3 pointer-events-none transition-colors"></i>
+                    <button type="submit" class="sr-only">Search</button>
+                </form>
+            </div>
+
+            <!-- Right: Navigation Links & Actions -->
+            <div class="flex items-center space-x-6 md:space-x-8 shrink-0">
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex space-x-6 xl:space-x-8 text-xs xl:text-sm font-medium tracking-wider uppercase">
+
+                    <a href="products.html" class="nav-link text-ivory hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Collections</a>
+                    <a href="about.html" class="nav-link text-ivory hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">About Us</a>
+                    <a href="certificates.html" class="nav-link text-ivory hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Certificates</a>
+                    <a href="contact.html" class="nav-link text-ivory hover:text-gold transition-colors relative py-1 after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[1.5px] after:bg-gold hover:after:w-full after:transition-all after:duration-300">Contact</a>
+                </nav>
+
+                <!-- Action Items -->
+                <div class="flex items-center space-x-4 md:space-x-5">
+                    <a href="#" class="nav-link text-ivory hover:text-gold transition-colors relative p-1" title="Wishlist">
+                        <i data-lucide="heart" class="w-5 h-5"></i>
+                        <span class="absolute -top-1 -right-1.5 bg-gold text-white text-[9px] font-bold w-4 h-4 rounded-full flex items-center justify-center">2</span>
+                    </a>
+                    <a href="contact.html" class="hidden md:inline-flex items-center justify-center px-4 py-1.5 rounded-full border border-gold text-gold hover:bg-gold hover:text-white transition-all duration-300 text-xs tracking-widest uppercase font-medium shadow-sm hover:shadow">Enquire</a>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden nav-link text-ivory hover:text-gold transition-colors p-1" aria-label="Toggle Menu">
+                        <i data-lucide="menu" class="w-6 h-6"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Mobile Menu Drawer (Simplified) -->
+    <div id="mobile-menu" class="fixed inset-y-0 left-0 w-full max-w-sm bg-ivory z-[60] transform -translate-x-full transition-transform duration-500 flex flex-col">
+        <div class="p-6 flex justify-between items-center border-b border-taupe/20">
+            <div class="flex items-center space-x-2.5">
+                <div class="w-7 h-7 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center">
+                    <svg class="w-4 h-4 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                        <polygon points="12 2 19 9 12 22 5 9 12 2"></polygon>
+                        <line x1="5" y1="9" x2="19" y2="9"></line>
+                        <line x1="12" y1="2" x2="12" y2="22"></line>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg font-serif tracking-[0.25em] text-charcoal uppercase font-medium leading-none">AURA</span>
+                    <span class="text-[7px] tracking-[0.3em] text-gold uppercase font-sans font-light">FINE JEWELLERY</span>
+                </div>
+            </div>
+            <button id="close-menu-btn" class="hover:text-gold transition-colors"><i data-lucide="x" class="w-6 h-6"></i></button>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-8 px-6 space-y-6">
+            <a href="../index.html" class="block text-xl font-serif hover:text-gold">Home</a>
+
+            <a href="about.html" class="block text-xl font-serif hover:text-gold">About Us</a>
+            <a href="certificates.html" class="block text-xl font-serif hover:text-gold">Certificates</a>
+            <a href="contact.html" class="block text-xl font-serif hover:text-gold">Contact</a>
+        </nav>
+    </div>
+
+    <!-- Hero -->
+    <section class="relative h-[70vh] flex items-center justify-center border-b-[6px] border-double border-gold/40">
+        <img src="../assets/about-hero.jpg" alt="Royal Heritage Jewellery" class="absolute inset-0 w-full h-full object-cover">
+        <!-- Deep royal green & charcoal gradient overlay -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#1a231f]/70 via-charcoal/60 to-charcoal/90"></div>
+
+        <div class="relative z-10 text-center text-white px-4 flex flex-col items-center">
+            <div class="w-12 h-[1px] bg-gold mb-6"></div>
+            <h1 class="hero-animate opacity-0 translate-y-8 transition-all duration-1000 font-royal text-5xl md:text-7xl mb-4 tracking-widest text-transparent bg-clip-text bg-gradient-to-r from-[#D4AF37] via-[#FFF8DC] to-[#D4AF37]">OUR STORY</h1>
+            <p class="hero-animate opacity-0 translate-y-8 transition-all duration-1000 delay-200 font-serif italic text-xl md:text-2xl text-[#E8DCC4] max-w-2xl mx-auto tracking-wide">
+                "More than jewellery.<br>A centuries-old legacy of royal craftsmanship."
+            </p>
+            <div class="w-12 h-[1px] bg-gold mt-8"></div>
+        </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="relative py-24 px-6 md:px-12 text-center bg-fixed bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1542173166-5b4a92decfd0?auto=format&fit=crop&q=80&w=2000');">
+        <!-- Subtle ivory overlay to ensure text readability while keeping image visible -->
+        <div class="absolute inset-0 bg-[#F7F3EC]/60 backdrop-blur-[1px]"></div>
+        
+        <div class="relative z-10 max-w-[1200px] mx-auto">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[1px] h-16 bg-gold/50"></div>
+            <div class="pt-10">
+                <span class="text-gold text-xs tracking-[0.3em] uppercase mb-4 block fade-up font-sans font-medium">The Royal Archive</span>
+                <h2 class="font-royal text-4xl md:text-5xl mb-10 fade-up text-charcoal tracking-wide">A HERITAGE OF EXCELLENCE</h2>
+                <div class="flex justify-center mb-10 fade-up">
+                    <svg class="w-8 h-8 text-gold/60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L15 9l7 1-5 5 1 7-7-4-7 4 1-7-5-5 7-1z"></path></svg>
+                </div>
+                <p class="text-charcoal/80 text-lg md:text-xl leading-loose max-w-3xl mx-auto fade-up font-serif italic">
+                    Founded on the principles of purity, precision, and passion, our journey began with a singular vision: to create jewellery that transcends time. We believe that every ornament carries a soul, shaped by the hands that mold it and the stories of those who wear it. Over the years, we have nurtured a legacy of Indian craftsmanship, blending traditional artistry with modern luxury.
+                </p>
+            </div>
+            
+            <div class="mt-20 relative max-w-4xl mx-auto fade-up group">
+                <div class="absolute -inset-2 border border-gold/30 rounded-t-full transition-transform duration-700 group-hover:scale-[1.02]"></div>
+                <img src="https://images.unsplash.com/photo-1599839619722-39751411ea63?auto=format&fit=crop&q=80&w=1200" alt="Antique Gold Jewellery" class="w-full h-[500px] object-cover rounded-t-full shadow-2xl transition-transform duration-700 group-hover:scale-105">
+                <div class="absolute inset-0 rounded-t-full ring-1 ring-inset ring-black/10 pointer-events-none"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy & Craftsmanship Split -->
+    <section class="flex flex-col md:flex-row border-y border-gold/20 bg-[#2C3E35] text-ivory">
+        <div class="w-full md:w-1/2 p-12 lg:p-24 flex items-center relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-64 h-64 border border-gold/10 rounded-full translate-x-1/2 -translate-y-1/2"></div>
+            <div class="max-w-md fade-up relative z-10">
+                <span class="text-gold text-[10px] tracking-[0.3em] uppercase mb-4 block font-sans">The Atelier</span>
+                <h3 class="font-royal text-3xl md:text-4xl mb-8 text-[#E8DCC4]">OUR PHILOSOPHY</h3>
+                <div class="w-8 h-[1px] bg-gold/50 mb-8"></div>
+                <p class="text-ivory/80 leading-loose mb-6 font-serif text-lg">
+                    True luxury whispers; it does not shout. Our philosophy centers on creating understated elegance reminiscent of royal courts. We design not for the trend of the moment, but for the eternity of the heirloom. Every piece is conceived with an editorial eye—focusing on proportion, balance, and the intrinsic beauty of ancient materials.
+                </p>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 h-[500px] md:h-auto overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&q=80&w=1000" alt="Philosophy" class="w-full h-full object-cover hover:scale-105 transition-transform duration-1000">
+        </div>
+    </section>
+
+    <section class="flex flex-col md:flex-row-reverse border-b border-gold/20 bg-[#F5EEDF]">
+        <div class="w-full md:w-1/2 p-12 lg:p-24 flex items-center relative">
+            <div class="absolute bottom-0 left-0 w-32 h-32 border-l border-b border-gold/20 -translate-x-4 translate-y-4"></div>
+            <div class="max-w-md fade-up relative z-10">
+                <span class="text-gold text-[10px] tracking-[0.3em] uppercase mb-4 block font-sans">The Masters</span>
+                <h3 class="font-royal text-3xl md:text-4xl mb-8 text-charcoal">OUR CRAFTSMANSHIP</h3>
+                <div class="w-8 h-[1px] bg-gold mb-8"></div>
+                <p class="text-charcoal/80 leading-loose mb-6 font-serif text-lg">
+                    Behind every brilliant diamond and every curve of gold lies countless hours of dedication. Our artisans are the custodians of centuries-old techniques—from intricate Kundan setting to delicate filigree work. We honor these traditions while employing state-of-the-art precision, ensuring each piece is flawlessly finished for a royal lineage.
+                </p>
+            </div>
+        </div>
+        <div class="w-full md:w-1/2 h-[500px] md:h-auto p-8 md:p-16 flex items-center justify-center bg-white relative">
+             <div class="absolute inset-4 border border-gold/20 rounded-sm"></div>
+            <div class="relative w-full h-full overflow-hidden rounded-sm shadow-xl group">
+                 <img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&q=80&w=1000" alt="Craftsmanship" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+            </div>
+        </div>
+    </section>
+
+    <!-- Values -->
+    <section class="py-24 md:py-32 bg-charcoal text-[#F7F3EC] px-6 relative border-b-8 border-gold">
+        <div class="absolute inset-0 opacity-5" style="background-image: radial-gradient(#B99A62 1px, transparent 1px); background-size: 20px 20px;"></div>
+        <div class="max-w-6xl mx-auto text-center relative z-10">
+            <span class="text-gold text-xs tracking-[0.3em] uppercase mb-4 block fade-up font-sans">The Pillars</span>
+            <h2 class="font-royal text-4xl md:text-5xl mb-20 fade-up text-[#E8DCC4]">OUR VALUES</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+                <div class="fade-up delay-100 group border border-gold/20 p-8 hover:border-gold/60 transition-colors duration-500 bg-white/5 backdrop-blur-sm relative hover:-translate-y-1">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[1px] bg-gold"></div>
+                    <i data-lucide="gem" class="w-8 h-8 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"></i>
+                    <h4 class="font-royal text-lg text-[#E8DCC4] mb-4">CRAFTSMANSHIP</h4>
+                    <p class="text-sm text-[#F7F3EC]/70 font-light leading-relaxed font-sans">Uncompromising attention to detail in every royal creation.</p>
+                </div>
+                <div class="fade-up delay-200 group border border-gold/20 p-8 hover:border-gold/60 transition-colors duration-500 bg-white/5 backdrop-blur-sm relative hover:-translate-y-1">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[1px] bg-gold"></div>
+                    <i data-lucide="shield-check" class="w-8 h-8 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"></i>
+                    <h4 class="font-royal text-lg text-[#E8DCC4] mb-4">AUTHENTICITY</h4>
+                    <p class="text-sm text-[#F7F3EC]/70 font-light leading-relaxed font-sans">Genuine antique materials and certified absolute purity.</p>
+                </div>
+                <div class="fade-up delay-300 group border border-gold/20 p-8 hover:border-gold/60 transition-colors duration-500 bg-white/5 backdrop-blur-sm relative hover:-translate-y-1">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[1px] bg-gold"></div>
+                    <i data-lucide="eye" class="w-8 h-8 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"></i>
+                    <h4 class="font-royal text-lg text-[#E8DCC4] mb-4">TRANSPARENCY</h4>
+                    <p class="text-sm text-[#F7F3EC]/70 font-light leading-relaxed font-sans">Honest pricing and perfectly clear archival documentation.</p>
+                </div>
+                <div class="fade-up delay-400 group border border-gold/20 p-8 hover:border-gold/60 transition-colors duration-500 bg-white/5 backdrop-blur-sm relative hover:-translate-y-1">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[1px] bg-gold"></div>
+                    <i data-lucide="users" class="w-8 h-8 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"></i>
+                    <h4 class="font-royal text-lg text-[#E8DCC4] mb-4">TRUST</h4>
+                    <p class="text-sm text-[#F7F3EC]/70 font-light leading-relaxed font-sans">Building regal relationships that last through generations.</p>
+                </div>
+                <div class="fade-up delay-500 group border border-gold/20 p-8 hover:border-gold/60 transition-colors duration-500 bg-white/5 backdrop-blur-sm relative hover:-translate-y-1">
+                    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-8 h-[1px] bg-gold"></div>
+                    <i data-lucide="clock" class="w-8 h-8 text-gold mb-6 mx-auto group-hover:scale-110 transition-transform duration-500"></i>
+                    <h4 class="font-royal text-lg text-[#E8DCC4] mb-4">TIMELESS</h4>
+                    <p class="text-sm text-[#F7F3EC]/70 font-light leading-relaxed font-sans">Heritage aesthetics that gracefully transcend eras.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Promise -->
+    <section class="py-24 bg-ivory text-center px-6 relative overflow-hidden">
+        <div class="absolute left-0 top-0 w-32 h-32 border-t border-l border-gold/20 opacity-50"></div>
+        <div class="absolute right-0 bottom-0 w-32 h-32 border-b border-r border-gold/20 opacity-50"></div>
+        <div class="max-w-3xl mx-auto fade-up relative z-10">
+            <svg class="w-10 h-10 text-gold mx-auto mb-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><polygon points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9"></polygon></svg>
+            <h2 class="font-royal text-4xl mb-8 text-charcoal">OUR PROMISE</h2>
+            <p class="text-charcoal/80 text-lg md:text-xl leading-loose mb-12 font-serif italic">
+                When you choose our jewellery, you are not just acquiring a precious object; you are welcoming a piece of royal legacy into your family. We promise to stand by the quality, authenticity, and breathtaking beauty of our creations for a lifetime.
+            </p>
+            <div class="relative max-w-4xl mx-auto mb-16 p-2 border border-gold/30 bg-white shadow-xl">
+                 <img src="https://images.unsplash.com/photo-1515562141207-7a8efc11b11f?auto=format&fit=crop&q=80&w=1200" alt="Promise" class="w-full h-[400px] object-cover">
+            </div>
+            <a href="contact.html" class="inline-flex items-center justify-center px-12 py-4 bg-charcoal text-gold border border-gold/50 hover:bg-gold hover:text-white transition-colors duration-500 text-xs tracking-[0.2em] uppercase font-sans font-medium">
+                Visit Our Showroom
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer (Simplified for inner pages) -->
+    <footer class="bg-ivory pt-16 pb-8 border-t border-taupe/30 text-center">
+        <a href="../index.html" class="block font-serif text-2xl tracking-[0.2em] uppercase mb-4">Aura</a>
+        <p class="text-sm text-charcoal/60">&copy; 2026 Aura Jewellery. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/animations.js"></script>
+</body>
+</html>
